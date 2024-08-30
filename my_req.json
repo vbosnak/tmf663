@@ -1,0 +1,547 @@
+{
+  "cartItem": [
+    {
+      "id": "20",
+      "quantity": 1,
+      "ItemTotalPrice": [
+        {
+          "description": "Total Recurring Price.",
+          "name": "Monthly Price",
+          "priceType": "recurring",
+          "recurringChargePeriod": "month",
+          "unitOfMeasure": "string",
+          "price": {
+            "percentage": 0,
+            "taxRate": 0,
+            "dutyFreeAmount": {
+              "unit": "string",
+              "value": 0
+            },
+            "taxIncludedAmount": {
+              "unit": "CAN",
+              "value": 50
+            },
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string"
+          },
+          "priceAlteration": [
+            {
+              "applicationDuration": 3,
+              "description": "First 3 month get 50% off",
+              "name": "WelcomeDiscount",
+              "priceType": "recurring",
+              "priority": 1,
+              "recurringChargePeriod": "month",
+              "unitOfMeasure": "string",
+              "price": {
+                "percentage": 50,
+                "taxRate": 0,
+                "dutyFreeAmount": {
+                  "unit": "string",
+                  "value": 0
+                },
+                "taxIncludedAmount": {
+                  "unit": "CAN",
+                  "value": 0
+                },
+                "@baseType": "string",
+                "@schemaLocation": "string",
+                "@type": "string"
+              },
+              "productOfferingPrice": {
+                "id": "string",
+                "href": "string",
+                "name": "string",
+                "@baseType": "string",
+                "@schemaLocation": "string",
+                "@type": "string",
+                "@referredType": "string"
+              },
+              "@baseType": "string",
+              "@schemaLocation": "string",
+              "@type": "string"
+            }
+          ],
+          "productOfferingPrice": {
+            "id": "string",
+            "href": "string",
+            "name": "string",
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string",
+            "@referredType": "string"
+          },
+          "@baseType": "string",
+          "@schemaLocation": "string",
+          "@type": "string"
+        }
+      ],
+      "action": "add",
+      "cartItemRelationship": [
+        {
+          "id": "string",
+          "relationshipType": "string",
+          "@baseType": "string",
+          "@schemaLocation": "string",
+          "@type": "string"
+        }
+      ],
+      "itemPrice": [
+        {
+          "description": "Total Recurring Price.",
+           "name": "Monthly Price",
+          "priceType": "recurring",
+          "recurringChargePeriod": "month",
+          "unitOfMeasure": "string",
+          "price": {
+            "percentage": 0,
+            "taxRate": 0,
+            "dutyFreeAmount": {
+              "unit": "string",
+              "value": 0
+            },
+            "taxIncludedAmount": {
+              "unit": "CAN",
+              "value": 50
+            },
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string"
+          },
+          "priceAlteration": [
+            {
+              "applicationDuration": 3,
+              "description": "First 3 month get 50% off",
+              "name": "WelcomeDiscount",
+              "priceType": "recurring",
+              "priority": 0,
+              "recurringChargePeriod": "month",
+              "unitOfMeasure": "string",
+              "price": {
+                "percentage": 50,
+                "taxRate": 0,
+                "dutyFreeAmount": {
+                  "unit": "string",
+                  "value": 0
+                },
+                "taxIncludedAmount": {
+                  "unit": "string",
+                  "value": 0
+                },
+                "@baseType": "string",
+                "@schemaLocation": "string",
+                "@type": "string"
+              },
+              "productOfferingPrice": {
+                "id": "string",
+                "href": "string",
+                "name": "string",
+                "@baseType": "string",
+                "@schemaLocation": "string",
+                "@type": "string",
+                "@referredType": "string"
+              },
+              "@baseType": "string",
+              "@schemaLocation": "string",
+              "@type": "string"
+            }
+          ],
+          "productOfferingPrice": {
+            "id": "string",
+            "href": "string",
+            "name": "string",
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string",
+            "@referredType": "string"
+          },
+          "@baseType": "string",
+          "@schemaLocation": "string",
+          "@type": "string"
+        }
+      ],
+      "itemTerm": [
+        {
+          "description": "Tariff plan 12 Months commitment",
+          "name": "12Months",
+          "duration": {
+            "amount": 12,
+            "units": "month"
+          },
+          "@baseType": "string",
+          "@schemaLocation": "string",
+          "@type": "string"
+        }
+      ],
+      "note": [
+        {
+          "id": "string",
+          "author": "string",
+          "date": "2024-08-16T14:58:23.067Z",
+          "text": "string",
+          "@baseType": "string",
+          "@schemaLocation": "string",
+          "@type": "string"
+        }
+      ],
+      "product": {
+        "id": "string",
+        "href": "string",
+        "description": "Talk Simple 25",
+        "isBundle": false,
+        "isCustomerVisible": false,
+        "name": "Talk Simple 25",
+        "orderDate": "2024-08-16T14:58:23.067Z",
+        "productSerialNumber": "SERIAL_NUMBER",
+        "startDate": "2024-08-16T14:58:23.067Z",
+        "terminationDate": "2024-08-16T14:58:23.067Z",
+        "agreement": [
+          {
+            "id": "string",
+            "href": "string",
+            "agreementItemId": "string",
+            "name": "string",
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string",
+            "@referredType": "string"
+          }
+        ],
+        "billingAccount": {
+          "id": "string",
+          "href": "string",
+          "name": "string",
+          "@baseType": "string",
+          "@schemaLocation": "string",
+          "@type": "string",
+          "@referredType": "string"
+        },
+        "place": [
+          {
+            "id": "string",
+            "href": "string",
+            "name": "string",
+            "role": "string",
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string",
+            "@referredType": "string"
+          }
+        ],
+        "productOffering": {
+          "id": "string",
+          "href": "string",
+          "name": "string",
+          "@baseType": "string",
+          "@schemaLocation": "string",
+          "@type": "string",
+          "@referredType": "string"
+        },
+        "productOrderItem": [
+          {
+            "orderItemAction": "string",
+            "orderItemId": "string",
+            "productOrderHref": "string",
+            "productOrderId": "string",
+            "role": "string",
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string",
+            "@referredType": "string"
+          }
+        ],
+        "productPrice": [
+          {
+            "description": "Total Recurring Price.",
+			"name": "Monthly Price",
+			"priceType": "recurring",
+			"recurringChargePeriod": "month",
+            "unitOfMeasure": "string",
+            "billingAccount": {
+              "id": "string",
+              "href": "string",
+              "name": "string",
+              "@baseType": "string",
+              "@schemaLocation": "string",
+              "@type": "string",
+              "@referredType": "string"
+            },
+            "price": {
+              "percentage": 0,
+              "taxRate": 0,
+              "dutyFreeAmount": {
+                "unit": "string",
+                "value": 0
+              },
+              "taxIncludedAmount": {
+                "unit": "CAN",
+                "value": 50
+              },
+              "@baseType": "string",
+              "@schemaLocation": "string",
+              "@type": "string"
+            },
+            "productOfferingPrice": {
+              "id": "string",
+              "href": "string",
+              "name": "string",
+              "@baseType": "string",
+              "@schemaLocation": "string",
+              "@type": "string",
+              "@referredType": "string"
+            },
+            "productPriceAlteration": [
+              {
+                "applicationDuration": 0,
+                "description": "string",
+                "name": "string",
+                "priceType": "string",
+                "priority": 0,
+                "recurringChargePeriod": "string",
+                "unitOfMeasure": "string",
+                "price": {
+                  "percentage": 0,
+                  "taxRate": 0,
+                  "dutyFreeAmount": {
+                    "unit": "string",
+                    "value": 0
+                  },
+                  "taxIncludedAmount": {
+                    "unit": "string",
+                    "value": 0
+                  },
+                  "@baseType": "string",
+                  "@schemaLocation": "string",
+                  "@type": "string"
+                },
+                "productOfferingPrice": {
+                  "id": "string",
+                  "href": "string",
+                  "name": "string",
+                  "@baseType": "string",
+                  "@schemaLocation": "string",
+                  "@type": "string",
+                  "@referredType": "string"
+                },
+                "@baseType": "string",
+                "@schemaLocation": "string",
+                "@type": "string"
+              }
+            ],
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string"
+          }
+        ],
+        "productSpecification": {
+          "id": "string",
+          "href": "string",
+          "name": "Specification for Talk Simple 25",
+          "version": "string",
+          "targetProductSchema": {
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string"
+          },
+          "@baseType": "string",
+          "@schemaLocation": "string",
+          "@type": "string",
+          "@referredType": "string"
+        },
+        "productTerm": [
+          {
+            "description": "productTerm",
+            "name": "productTerm",
+            "duration": {
+              "amount": 12,
+				"units": "month"
+            },
+            "validFor": {
+              "endDateTime": "2024-12-16T14:58:23.067Z",
+              "startDateTime": "2024-08-16T14:58:23.067Z"
+            },
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string"
+          }
+        ],
+        "realizingResource": [
+          {
+            "id": "string",
+            "href": "string",
+            "name": "string",
+            "value": "string",
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string",
+            "@referredType": "string"
+          }
+        ],
+        "realizingService": [
+          {
+            "id": "string",
+            "href": "string",
+            "name": "string",
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string",
+            "@referredType": "string"
+          }
+        ],
+        "relatedParty": [
+          {
+            "id": "string",
+            "href": "string",
+            "name": "Test Related Party",
+            "role": "string",
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string",
+            "@referredType": "string"
+          }
+        ],
+        "status": "created",
+        "@baseType": "string",
+        "@schemaLocation": "string",
+        "@type": "string",
+        "@referredType": "string"
+      },
+      "productOffering": {
+        "id": "string",
+        "href": "string",
+        "name": "string",
+        "@baseType": "string",
+        "@schemaLocation": "string",
+        "@type": "string",
+        "@referredType": "string"
+      },
+      "status": "active",
+      "@baseType": "string",
+      "@schemaLocation": "string",
+      "@type": "string"
+    }
+  ],
+  "cartTotalPrice": [
+    {
+      "description": "string",
+      "name": "string",
+      "priceType": "string",
+      "recurringChargePeriod": "string",
+      "unitOfMeasure": "string",
+      "price": {
+        "percentage": 0,
+        "taxRate": 0,
+        "dutyFreeAmount": {
+          "unit": "string",
+          "value": 0
+        },
+        "taxIncludedAmount": {
+          "unit": "string",
+          "value": 0
+        },
+        "@baseType": "string",
+        "@schemaLocation": "string",
+        "@type": "string"
+      },
+      "priceAlteration": [
+        {
+          "applicationDuration": 0,
+          "description": "string",
+          "name": "string",
+          "priceType": "string",
+          "priority": 0,
+          "recurringChargePeriod": "string",
+          "unitOfMeasure": "string",
+          "price": {
+            "percentage": 0,
+            "taxRate": 0,
+            "dutyFreeAmount": {
+              "unit": "string",
+              "value": 0
+            },
+            "taxIncludedAmount": {
+              "unit": "string",
+              "value": 0
+            },
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string"
+          },
+          "productOfferingPrice": {
+            "id": "string",
+            "href": "string",
+            "name": "string",
+            "@baseType": "string",
+            "@schemaLocation": "string",
+            "@type": "string",
+            "@referredType": "string"
+          },
+          "@baseType": "string",
+          "@schemaLocation": "string",
+          "@type": "string"
+        }
+      ],
+      "productOfferingPrice": {
+        "id": "string",
+        "href": "string",
+        "name": "string",
+        "@baseType": "string",
+        "@schemaLocation": "string",
+        "@type": "string",
+        "@referredType": "string"
+      },
+      "@baseType": "string",
+      "@schemaLocation": "string",
+      "@type": "string"
+    }
+  ],
+  "contactMedium": [
+    {
+      "mediumType": "string",
+      "preferred": true,
+      "characteristic": {
+        "city": "string",
+        "contactType": "string",
+        "country": "string",
+        "emailAddress": "string",
+        "faxNumber": "string",
+        "phoneNumber": "string",
+        "postCode": "string",
+        "socialNetworkId": "string",
+        "stateOrProvince": "string",
+        "street1": "string",
+        "street2": "string",
+        "@baseType": "string",
+        "@schemaLocation": "string",
+        "@type": "string"
+      },
+      "validFor": {
+        "endDateTime": "2024-08-16T14:58:23.067Z",
+        "startDateTime": "2024-08-16T14:58:23.067Z"
+      },
+      "@baseType": "string",
+      "@schemaLocation": "string",
+      "@type": "string"
+    }
+  ],
+  "relatedParty": [
+    {
+      "id": "string",
+      "href": "string",
+      "name": "string",
+      "role": "string",
+      "@baseType": "string",
+      "@schemaLocation": "string",
+      "@type": "string",
+      "@referredType": "string"
+    }
+  ],
+  "validFor": {
+    "endDateTime": "2024-12-16T14:58:23.067Z",
+    "startDateTime": "2024-08-16T14:58:23.067Z"
+  },
+  "@baseType": "string",
+  "@schemaLocation": "string",
+  "@type": "string"
+}

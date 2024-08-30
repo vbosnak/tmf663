@@ -15,6 +15,7 @@ import (
 	"context"
 	"net/http"
 	"errors"
+	 "strconv"
 	models "tmf663/models"
 	db  "tmf663/dao/query"
 )
@@ -96,7 +97,20 @@ func (s *ShoppingCartAPIService) DeleteShoppingCart(ctx context.Context, id stri
 	// TODO: Uncomment the next line to return response Response(500, Error{}) or use other options such as http.Ok ...
 	// return Response(500, Error{}), nil
 
-	return models.Response(http.StatusNotImplemented, nil), errors.New("DeleteShoppingCart method not implemented")
+	fmt.Println("Delete Shopping Cart with ID : ", id)
+
+	result, err := db.DeleteShoppingCartById(id)
+	
+	if err != nil {
+		return models.Response(http.StatusBadRequest, nil), errors.New("DeleteShoppingCart method not implemented")
+	}
+	
+	if !result {
+		return models.Response(http.StatusBadRequest, nil), errors.New("DeleteShoppingCart method not implemented")
+	}
+
+	return models.Response(http.StatusNoContent, result), nil
+
 }
 
 // ListShoppingCart - List or find ShoppingCart objects
@@ -128,7 +142,16 @@ func (s *ShoppingCartAPIService) ListShoppingCart(ctx context.Context, fields st
 	// TODO: Uncomment the next line to return response Response(500, Error{}) or use other options such as http.Ok ...
 	// return Response(500, Error{}), nil
 
-	return models.Response(http.StatusNotImplemented, nil), errors.New("ListShoppingCart method not implemented")
+	fmt.Println("Get Shopping Cart List ")
+
+	result,err := db.GetShoppingCartList()
+
+	if err!= nil {
+		return models.Response(http.StatusBadRequest, nil), errors.New("ListShoppingCart method not implemented")
+	}
+
+	return models.Response(http.StatusOK, result), nil
+
 }
 
 // PatchShoppingCart - Updates partially a ShoppingCart
@@ -192,5 +215,22 @@ func (s *ShoppingCartAPIService) RetrieveShoppingCart(ctx context.Context, id st
 	// TODO: Uncomment the next line to return response Response(500, Error{}) or use other options such as http.Ok ...
 	// return Response(500, Error{}), nil
 
-	return models.Response(http.StatusNotImplemented, nil), errors.New("RetrieveShoppingCart method not implemented")
+	fmt.Println("Get Shopping Cart with ID : ", id)
+	result := db.GetShoppingCartById(id)
+
+	if result.Id == "0" {
+		return models.Response(http.StatusBadRequest, nil), errors.New("RetrieveShoppingCart has failed")
+	}
+	/*
+	i, err := strconv.Atoi(id)
+   if err != nil {
+		errors.New("RetrieveShoppingCart has failed")
+    }
+	result,err := db.RetrieveShoppingCart(int32(i))
+	if (err != nil) {
+		return models.Response(http.StatusBadRequest, nil), errors.New("RetrieveShoppingCart has failed")
+	}
+	*/
+	
+	return models.Response(http.StatusOK, result), nil
 }

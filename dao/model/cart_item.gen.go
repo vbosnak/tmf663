@@ -8,7 +8,7 @@ const TableNameCARTITEM = "CART_ITEM"
 
 // CARTITEM mapped from table <CART_ITEM>
 type CARTITEM struct {
-	ID              int32   `gorm:"column:ID;primaryKey" json:"ID"`
+	ID              int32   `gorm:"column:ID;primaryKey;autoIncrement:true" json:"ID"`
 	SHOPPINGCARTID  int32   `gorm:"column:SHOPPING_CART_ID" json:"SHOPPING_CART_ID"`
 	ACTION          string  `gorm:"column:ACTION" json:"ACTION"`
 	STATUS          string  `gorm:"column:STATUS" json:"STATUS"`

@@ -16,7 +16,6 @@ import (
 
 	"gorm.io/plugin/dbresolver"
 	model "tmf663/dao/model"
-
 )
 
 func newPRODUCT(db *gorm.DB, opts ...gen.DOOption) pRODUCT {

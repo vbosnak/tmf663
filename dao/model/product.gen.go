@@ -12,7 +12,7 @@ const TableNamePRODUCT = "PRODUCT"
 
 // PRODUCT mapped from table <PRODUCT>
 type PRODUCT struct {
-	ID                    int32     `gorm:"column:ID;primaryKey" json:"ID"`
+	ID                    int32     `gorm:"column:ID;primaryKey;autoIncrement:true" json:"ID"`
 	PRODUCTORDERID        int32     `gorm:"column:PRODUCTORDER_ID" json:"PRODUCTORDER_ID"`
 	DESCRIPTION           string    `gorm:"column:DESCRIPTION" json:"DESCRIPTION"`
 	ISBUNDLE              bool      `gorm:"column:IS_BUNDLE" json:"IS_BUNDLE"`
